@@ -9,7 +9,6 @@ object TutorialApp {
 
   def setupUI(): Unit = {
     $("body") append "<p>Hello World</p>"
-    //$("#click-me-button") click (() => addClickedMessage())
     $("""<button type="button">Click me!</button>""")
       .click(() => addClickedMessage())
       .appendTo($("body"))
